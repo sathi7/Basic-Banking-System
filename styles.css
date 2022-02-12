@@ -1,0 +1,343 @@
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Crimson+Pro:ital,wght@0,200;1,400&family=Mate+SC&family=Sriracha&family=Ubuntu+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amiri:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: #40514E;
+    background-color: #95D1CC;
+    font-family: 'Crimson Pro', serif;
+}
+
+.navbar {
+    background-color: #92DDEF !important;
+}
+
+.nav-link {
+    font-weight: 800;
+    color: #f80759 !important;
+    font-family: 'Mate SC', serif;
+    font-size: 17px;
+}
+
+ul li:hover {
+    border: 2px #c31432 solid;
+    border-radius: 10px;
+    color: #ec008c;
+    background-color: #3b8d99;
+}
+
+.modal-title {
+    padding-left: 150px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.modal-header {
+    background-color: #F8FFAE;
+}
+
+.modal-body {
+    color: #0F2027;
+    background-color: #F8FFAE;
+}
+
+.modal-body input {
+    background-color: #C9FFBF;
+}
+
+.modal-body ::placeholder {
+    color: #FF5F6D;
+    font-weight: bold;
+}
+
+.modal-body label {
+    color: #DD2476;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.modal-footer {
+    background-color: #43C6AC;
+}
+
+.modal-footer button {
+    background-color: #FF416C;
+}
+
+.logo-text {
+    font-size: 20px;
+    color: #ee0979;
+    font-weight: bold;
+    font-family: cursive;
+}
+
+.top-con {
+    background-color: #B5DEFF;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.top-con p {
+    font-size: 25px;
+    color: #c94b4b;
+    font-family: 'Sriracha', cursive;
+}
+
+.top-con .quote {
+    font-size: 20px;
+    padding-left: 150px;
+    font-family: 'Pacifico', cursive;
+}
+
+.btn-0 {
+    padding-bottom: 50px;
+}
+
+.btn-0 a {
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.bank {
+    color: #E94057;
+    font-family: 'Akaya Telivigala', cursive;
+    line-height: 2;
+}
+
+.middle-con {
+    margin: 1em 0;
+    text-align: center;
+}
+
+.middle-con img {
+    width: 30vw;
+    height: 30vw;
+}
+
+.middle-cover img {
+    object-fit: cover;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    align-items: center;
+    grid-gap: 15px;
+    padding-top: 20px;
+    border-radius: 20px;
+}
+
+.flip-card {
+    width: 350px;
+    height: 350px;
+    perspective: 1000px;
+    padding: 20px;
+    background-color: #ffd89b;
+    border-radius: 20px;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 20px;
+}
+
+.flip-card-front {
+    color: black;
+    border-radius: 20px;
+}
+
+.flip-card-back h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;
+    padding: 20px;
+}
+
+.flip-card-back p {
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 2;
+    padding: 20px;
+}
+
+.flip-card-back {
+    background-color: #222e36ef;
+    color: white;
+    transform: rotateY(180deg);
+}
+
+.bottom-con {
+    margin-top: 25px;
+    text-align: center;
+    background-color: #66BFBF;
+    padding: 10px;
+}
+
+.bottom-con h2 {
+    font-weight: bold;
+    font-size: 20px;
+    color: #B24592;
+    padding-bottom: 10px;
+}
+
+.bottom-con p {
+    font-weight: bold;
+    font-size: 18px;
+    color: #B24592;
+}
+
+.btn-1 {
+    position: relative;
+    bottom: -40px;
+    margin-left: 180px;
+}
+
+.btn-2 {
+    position: relative;
+    bottom: -5px;
+    margin-left: 560px;
+}
+
+.btn-3 {
+    position: relative;
+    top: -30px;
+    margin-left: 940px;
+}
+
+.user-btn,
+.transact-btn,
+.history-btn,
+.reg-btn {
+    background: #888888;
+    background-image: -webkit-linear-gradient(top, #888888, #888888);
+    background-image: -moz-linear-gradient(top, #888888, #888888);
+    background-image: -ms-linear-gradient(top, #888888, #888888);
+    background-image: -o-linear-gradient(top, #888888, #888888);
+    background-image: linear-gradient(to bottom, #888888, #888888);
+    -webkit-border-radius: 60;
+    -moz-border-radius: 60;
+    border-radius: 60px;
+    font-family: Georgia;
+    color: #FFFFFF;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+}
+
+.user-btn:hover,
+.transact-btn:hover,
+.history-btn:hover,
+.reg-btn:hover {
+    background: #0F2027;
+    font-size: 22px;
+    color: #FFFFFF;
+    background-image: -webkit-linear-gradient(top, #2C5364, #2C5364);
+    background-image: -moz-linear-gradient(top, #2C5364, #2C5364);
+    background-image: -ms-linear-gradient(top, #2C5364, #2C5364);
+    background-image: -o-linear-gradient(top, #2C5364, #2C5364);
+    background-image: linear-gradient(to bottom, #2C5364, #2C5364);
+    text-decoration: none;
+}
+
+.social-media a {
+    text-decoration: none;
+}
+
+i.fab,
+.fas {
+    padding: 10px;
+    margin: 10px;
+    font-size: 30px;
+    color: #203A43;
+}
+
+.container {
+    margin-top: 20px;
+    padding-bottom: 20px;
+    background-color: #74ebd5;
+}
+
+.container .table-hover {
+    background-color: #FD746C;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.container h2 {
+    font-size: 35px;
+    font-weight: bold;
+    font-family: 'Amiri', serif;
+    color: #D66D75;
+}
+
+table {
+    letter-spacing: 1.2px;
+}
+
+td {
+    text-align: center;
+}
+
+.container .trans-tab {
+    background-color: #00F260;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.tabletext label {
+    color: #ee0979;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Georgia, serif;
+}
+
+.tabletext .options {
+    font-size: 20px;
+    font-weight: bold;
+    color: #ee0979;
+}
+
+.fetch {
+    font-size: 30px;
+}
+
+button {
+    border: none;
+    background: #d9d9d9;
+    transition: 1s;
+}
+
+button:hover {
+    background-color: #616C6F;
+    color: white;
+}
+
+.form-control {
+    color: #FF416C;
+    font-size: 20px;
+    font-weight: bold;
+}
